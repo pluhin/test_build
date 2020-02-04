@@ -4,7 +4,7 @@ RUN apk update \
     && apk upgrade \
     && apk add --no-cache nginx \
     && adduser -D -g 'www' www \
-    && mkdir /www \
+    && mkdir -p /www/test \
     && mkdir -p /run/nginx/ \
     && chown -R www:www /var/lib/nginx \
     && chown -R www:www /www
