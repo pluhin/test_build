@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+LABEL maintainer="pluhin@gmail.com"
+
 RUN apk update \
     && apk upgrade \
     && apk add --no-cache nginx \
